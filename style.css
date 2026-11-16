@@ -1,0 +1,58 @@
+@import url('https://fonts.cdnfonts.com/css/itc-avant-garde-pro-md');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --base-color: #ffffff;
+    --text-color: #2D2D2D;
+    --secondary-color: #A2ACB3;
+    --primary-accent: #E8E8E8;
+    --secondary-accent: #9FCCE5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Rubik, Verdana, sans-serif;
+    color: var(--text-color);
+}
+
+body {
+    padding: 1em;
+    background-color: var(--base-color)
+}
+
+h1, h2, h3 {
+    font-family: 'ITC Avant Garde Pro Md', Rubik, sans-serif;                        
+}
+
+nav {
+    margin: 1em auto 3em auto;
+    width: min(2000px, 100%);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 2em;
+}
+
+nav li:first-child {
+    margin-right: auto;
+    font-family: 'ITC Avant Garde Pro Md', Rubik, sans-serif;
+    font-weight: bold;
+    font-size: larger;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
