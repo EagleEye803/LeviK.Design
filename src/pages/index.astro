@@ -1,6 +1,14 @@
-<!DOCTYPE html>
+---
+import { Image } from 'astro:assets';
+import myImage from "../images/Force Impulse.JPG";
+import '../style.css';
+---
+
 <html lang="en">
-<link rel="stylesheet" href="style.css">
+<!--<link rel="stylesheet" href="/src/style.css"> -->
+<style>
+
+</style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +26,8 @@
             </ul>
         </nav>
         <div class="flex-container">
-            <img height="300px" width="400px" src="src/images/Force Impulse.JPG">
+            <!--<img height="300px" width="400px" src="src/images/Force Impulse.JPG">-->
+            <Image src={myImage} alt="MG Force Impulse Gundam" width="400px" height="300px" />
             <div class="text-container">
                 <h1>What's up gang</h1>
                 <p>This is all just a <strong>work in progress</strong> so bear with me as I make it all up</p>
