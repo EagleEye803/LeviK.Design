@@ -30,7 +30,7 @@ h1, h2, h3 {
 }
 
 nav {
-    margin: 1em auto 3em auto;
+    margin: 1em 1em 1em auto;
     width: min(2000px, 100%);
     background-color: var(--primary-accent);
 }
@@ -39,14 +39,16 @@ nav ul {
     display: flex;
     align-items: center;
     list-style-type: none;
-    gap: 2em;
+    gap: 1em;
+    font-size: x-small;
+    margin: 1em 1em 1em 1em;
 }
 
 nav li:first-child {
     margin-right: auto;
     font-family: 'ITC Avant Garde Pro Md', Rubik, sans-serif;
     font-weight: bold;
-    font-size: larger;
+    font-size: large;
 }
 
 nav a {
@@ -56,4 +58,12 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
+}
+
+header, section {
+    margin: 2em auto;
+    width: min(100em, 100%);
+    background-color: var(--base-color);
+    padding: min(1em, 15%);
+    border-radius: 1em;
 }
