@@ -21,7 +21,7 @@ html {
 }
 
 body {
-    padding: 1em;
+    padding: 0em;
     background-color: var(--base-color)
 }
 
@@ -30,9 +30,11 @@ h1, h2, h3 {
 }
 
 nav {
-    margin: 1em 1em 1em auto;
+    margin: 0;
     width: min(2000px, 100%);
     background-color: var(--primary-accent);
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
 }
 
 nav ul {
@@ -64,6 +66,6 @@ header, section {
     margin: 2em auto;
     width: min(100em, 100%);
     background-color: var(--base-color);
-    padding: min(1em, 15%);
+    padding: min(2em, 15%);
     border-radius: 1em;
 }

@@ -1,7 +1,11 @@
 ---
 import { Image } from 'astro:assets';
-import myImage from "../images/Force Impulse.JPG";
+import { Picture } from 'astro:assets';
 import '../style.css';
+
+//Images
+import myImage from "../images/Force Impulse.jpg";
+import ForceImpulse from "../images/Force Impulse.jpg"
 ---
 
 <html lang="en">
@@ -27,7 +31,15 @@ import '../style.css';
         </nav>
         <div class="flex-container">
             <!--<img height="300px" width="400px" src="src/images/Force Impulse.JPG">-->
-            <Image src={myImage} alt="MG Force Impulse Gundam" width=500 height=375 />
+            <!--<Image src={myImage} alt="MG Force Impulse Gundam" width=400 height=300 /> -->
+            <center>
+                 <Picture 
+                src={ForceImpulse} 
+                formats={['avif', 'webp']} 
+                alt="MG Force Impulse Gundam" 
+                width={300}
+                />
+            </center>
             <div class="text-container">
                 <h1>What's up gang</h1>
                 <p>This is all just a <strong>work in progress</strong> so bear with me as I make it all up :p</p>
